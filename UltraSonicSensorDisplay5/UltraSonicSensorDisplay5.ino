@@ -32,4 +32,5 @@ void loop() {
   else {
     pant.printNumI(distance,400,304);
   }
+  dely
 }

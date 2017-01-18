@@ -8,7 +8,7 @@ void setup()
 {
   randomSeed(analogRead(0));
 // Setup the LCD
-  pant.InitLCD();
+  pant.InitLCD(0);
   pant.setFont(BigFont);
 }
 
@@ -24,7 +24,7 @@ void loop()
   pant.clrScr();
   pant.setColor(VGA_AQUA);
   pant.setBrightness(5);
-  pant.print("Hello, World!",400,240,45);
+  pant.print("TUPAC",400,240,0);
   delay(500);
   pant.setBrightness(16);
   pant.setColor(VGA_LIME);
@@ -33,6 +33,6 @@ void loop()
   delay(3000);
   pant.clrScr();
   pant.setColor(VGA_NAVY);
-  pant.drawRoundRect(119,0,400,300);
+  pant.drawRoundRect(119,0,400,3004);
   delay(1000);
 }
